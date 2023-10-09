@@ -16,8 +16,8 @@ const CoachDashboard = ({ coachId }) => {
 
   useEffect(() => {
     // Set up Pusher
-    const pusher = new Pusher(process.env.REACT_APP_PUSHER_KEY, {
-      cluster: process.env.REACT_APP_PUSHER_CLUSTER,
+    const pusher = new Pusher(import.meta.env.VITE_APP_PUSHER_KEY, {
+      cluster: import.meta.env.VITE_APP_PUSHER_CLUSTER,
     });
 
     // Subscribe to the coach's channel

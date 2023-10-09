@@ -1,19 +1,19 @@
 import axios from "axios";
 
 const apiExternal = axios.create({
-  baseURL: import.meta.env.REACT_APP_EXERCISES_API_URI
+  baseURL: import.meta.env.VITE_APP_EXERCISES_API_URI
   // baseURL: process.env.REACT_APP_EXERCISES_API_URI,
 });
 
 const api = axios.create({
-  baseURL: import.meta.env.REACT_APP_API_URL,
+  baseURL: import.meta.env.VITE_APP_API_URL,
   // baseURL: process.env.REACT_APP_API_URL,
 });
 
 const specifiedOptions = {
   headers: {
-    "X-RapidAPI-Key": import.meta.env.REACT_APP_RapidAPI_Key,
-    "X-RapidAPI-Host": import.meta.env.REACT_APP_RapidAPI_Host,
+    "X-RapidAPI-Key": import.meta.env.VITE_APP_RapidAPI_Key,
+    "X-RapidAPI-Host": import.meta.env.VITE_APP_RapidAPI_Host,
     // "X-RapidAPI-Key": process.env.REACT_APP_RapidAPI_Key,
     // "X-RapidAPI-Host": process.env.REACT_APP_RapidAPI_Host,
   },
